@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1">
+    <test name="Regression_groups">
+        <groups>
+            <run>
+                <include name="1"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="arithmetic.Subtraction">
+                <methods>
+                    <include name="subtract"/>
+                </methods>
+            </class>
+
+            <!--<class name="arithmetic.Division">-->
+            <!--</class>-->
+            <!--<class name="arithmetic.Multiplication">-->
+            <!--</class>-->
+            <!--<class name="arithmetic.Addition">-->
+            <!--</class>-->
+        </classes>
+    </test>
+
+</suite>

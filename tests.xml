@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1">
+    <test name="Addition">
+        <classes>
+            <class name="tests.Addition_test">
+            </class>
+        </classes>
+    </test>
+    <test name="Division">
+        <classes>
+            <class name="tests.Division_test">
+            </class>
+        </classes>
+    </test>
+    <test name="Multiplication">
+        <classes>
+            <class name="tests.Multiplication_test">
+            </class>
+        </classes>
+    </test>
+    <test name="Subtraction">
+        <classes>
+            <class name="tests.Subtraction_test">
+            </class>
+        </classes>
+    </test>
+</suite>
