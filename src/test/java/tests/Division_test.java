@@ -1,7 +1,7 @@
 package tests;
 
 import arithmetic.Division;
-import data.Data;
+import dataProvider.Data;
 import org.testng.annotations.*;
 
 public class Division_test {

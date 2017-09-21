@@ -1,17 +1,8 @@
-package data;
+package dataProvider;
 
 import org.testng.annotations.DataProvider;
 
 public class Data {
-
-    @DataProvider(name = "AdditionData")
-    public static Object[][] additionData() {
-        return new Object[][]{
-                {1, 2},
-                {3, 4}
-        };
-    }
-
 
     @DataProvider(name = "MultiplicationData")
     public static Object[][] multiplicationData() {

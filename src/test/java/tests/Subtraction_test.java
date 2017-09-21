@@ -1,7 +1,7 @@
 package tests;
 
 import arithmetic.Subtraction;
-import data.Data;
+import dataProvider.Data;
 import org.testng.annotations.*;
 
 public class Subtraction_test {

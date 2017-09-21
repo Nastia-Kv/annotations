@@ -1,7 +1,7 @@
 package tests;
 
 import arithmetic.Multiplication;
-import data.Data;
+import dataProvider.Data;
 import org.testng.annotations.*;
 
 public class Multiplication_test {

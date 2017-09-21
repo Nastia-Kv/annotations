@@ -9,7 +9,7 @@
         </groups>
 
         <classes>
-            <class name="arithmetic.Subtraction">
+            <class name="tests.Addition_test">
                 <methods>
                     <include name="subtract"/>
                 </methods>

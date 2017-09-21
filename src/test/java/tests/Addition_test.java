@@ -1,13 +1,14 @@
 package tests;
 
 import arithmetic.Addition;
-import data.Data;
+import dataProvider.Data;
 import org.testng.annotations.*;
 
 public class Addition_test {
     Addition additionPage;
 
-    @BeforeClass
+    //alwaysRun = true or groups = "1"
+    @BeforeClass(groups = "1")
     private void print() {
         System.out.println("Before class");
         additionPage = new Addition();
@@ -18,9 +19,17 @@ public class Addition_test {
         System.out.println("After class");
     }
 
-    @Test(alwaysRun = true, dataProvider = "AdditionData", dataProviderClass = Data.class, groups = "1")
+    @Test(alwaysRun = true, dataProvider = "AdditionData", groups = "1")
     private void add(double a, double b) {
         additionPage.add(a, b);
+    }
+
+    @DataProvider(name = "AdditionData")
+    public static Object[][] additionData() {
+        return new Object[][]{
+                {1, 2},
+                {3, 4}
+        };
     }
 
 }
